@@ -13,15 +13,17 @@
         
 		<script src="lib/jquery/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/angular/angular-route.js" type="text/javascript" charset="utf-8"></script>
 		<!--<script src="lib/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>-->
 		<script src="js/vx-config.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/service.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/filter.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/directive.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/startup.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/controller.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<button onclick="NativeCall.goBack()" >返回</button>
-		<div id="content" v-viewport="content" apply="true" ajax-port='transfer'></div>
+		<div ng-view></div>
 	</body>
 </html>

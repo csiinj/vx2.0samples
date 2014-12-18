@@ -14,6 +14,8 @@ angular.module('ui.config', []).value('ui.config', {});
 angular.module('ui.libraries', ['ui.config']);
 angular.module('ui', ['ui.libraries','ui.config']);
 
+angular.module('mapp',['ngRoute']);
+
 
 /**
  *  Example Source Code Config
